@@ -52,3 +52,18 @@ def selective_tweet_shortener (tweet)
     tweet
   end
 end
+
+def shortened_tweet_truncator (tweet)
+  if tweet.length > 140
+    split_tweet = tweet.split(" ")
+    fixed_split_tweet = dictionary (split_tweet)
+    joined_tweet = fixed_split_tweet.join(" ") 
+    if joined_tweet.length > 140
+      
+    else
+      joined_tweet
+    end
+  else
+    tweet
+  end
+end
