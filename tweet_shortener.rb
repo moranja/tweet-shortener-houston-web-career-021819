@@ -43,8 +43,12 @@ def bulk_tweet_shortener (array_of_tweets)
 end
 
 def selective_tweet_shortener (tweet)
-  split_tweet = tweet.split(" ")
-  fixed_split_tweet = dictionary (split_tweet)
-  joined_tweet = fixed_split_tweet.join(" ") 
-  joined_tweet
+  if tweet.length > 140
+    split_tweet = tweet.split(" ")
+    fixed_split_tweet = dictionary (split_tweet)
+    joined_tweet = fixed_split_tweet.join(" ") 
+    joined_tweet
+  else
+    tweet
+  end
 end
