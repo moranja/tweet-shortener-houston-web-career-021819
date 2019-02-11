@@ -41,4 +41,10 @@ def bulk_tweet_shortener (array_of_tweets)
     puts word_substituter(i)
   end
 end
-  
+
+def selective_tweet_shortener (tweet)
+  split_tweet = tweet.split(" ")
+  fixed_split_tweet = dictionary (split_tweet)
+  joined_tweet = fixed_split_tweet.join(" ") 
+  joined_tweet
+end
