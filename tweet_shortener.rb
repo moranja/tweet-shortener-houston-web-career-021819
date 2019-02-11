@@ -23,8 +23,9 @@ def dictionary (tweet_array)
     keys = dictionary_hash.keys
     #binding.pry
     keys.each do |j|
-      if j == i {new_word = dictionary_hash[j]}
-      #end
+      if j == i 
+        new_word = dictionary_hash[j]
+      end
     end
     i = new_word
   end
