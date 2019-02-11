@@ -20,7 +20,7 @@ new_tweet_array =
     new_word = i
     keys = dictionary_hash.keys
     keys.each do |j|
-      if j == i 
+      if j == i.downcase 
         new_word = dictionary_hash[j]
       end
     end
