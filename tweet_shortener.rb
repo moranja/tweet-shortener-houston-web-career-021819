@@ -19,7 +19,6 @@ new_tweet_array =
   tweet_array.collect do |i|
     new_word = i
     keys = dictionary_hash.keys
-    #binding.pry
     keys.each do |j|
       if j == i 
         new_word = dictionary_hash[j]
