@@ -15,9 +15,7 @@ def dictionary (tweet_array)
     "and" => "&",
   }
   
-  new_array = []
-  
-  new_tweet_array = 
+new_tweet_array = 
   tweet_array.collect do |i|
     new_word = i
     keys = dictionary_hash.keys
