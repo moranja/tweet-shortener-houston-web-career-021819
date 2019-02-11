@@ -59,7 +59,7 @@ def shortened_tweet_truncator (tweet)
     fixed_split_tweet = dictionary (split_tweet)
     joined_tweet = fixed_split_tweet.join(" ") 
     if joined_tweet.length > 140
-      
+      joined_tweet[0..139]
     else
       joined_tweet
     end
